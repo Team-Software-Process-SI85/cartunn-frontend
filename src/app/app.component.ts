@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'upc-pre202401-si729-sw51-the-coders-frontend';
+  title = 'cartunn-frontend';
 }
