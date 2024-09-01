@@ -16,7 +16,6 @@ import {ShoppingCartComponent} from './subscription-and-payments/pages/shopping-
 import {ReportsPanelComponent} from './public/pages/reports-panel/reports-panel.component';
 import {NotificationsPanelComponent} from './profile-managment/pages/notifications-panel/notifications-panel.component';
 import {NotificationsCardComponent} from './profile-managment/components/card/card.component';
-import {ReportCardComponent} from './reports/components/card/card.component';
 import {ProductsCardComponent} from './products/components/card/card.component';
 import {SignInComponent} from './iam/pages/sign-in/sign-in.component';
 import {SignUpComponent} from './iam/pages/sign-up/sign-up.component';
@@ -24,8 +23,7 @@ import {ResetPasswordComponent} from './iam/pages/reset-password/reset-password.
 import {SignInFormComponent} from './iam/components/sign-in-form/sign-in-form.component';
 import {ResetPasswordFormComponent} from './iam/components/reset-password-form/reset-password-form.component';
 import {SignUpFormComponent} from './iam/components/sign-up-form/sign-up-form.component';
-import {CardComponent} from './product-refunds/components/card/card.component';
-import {FormComponent} from './product-refunds/components/form/form.component';
+
 
 import {MatListModule} from '@angular/material/list';
 import {MatSidenavModule} from '@angular/material/sidenav';
@@ -50,7 +48,6 @@ import {ProductsComponent} from './products/components/products/products.compone
 import {FavoritesCardComponent} from './dashboard-and-analytics/components/card/card.component';
 import {FavoritesPanelComponent} from './profile-managment/pages/favorites-panel/favorites-panel.component';
 import {HomeClientComponent} from './dashboard-and-analytics/pages/home-client/home-client.component';
-import {HomeStaffComponent} from './dashboard-and-analytics/pages/home-staff/home-staff.component';
 import {UpdateComponent} from './products/components/interaction-crud/update/update.component';
 import {UploadComponent} from './products/components/interaction-crud/upload/upload.component';
 import {RemoveComponent} from './products/components/interaction-crud/remove/remove.component';
@@ -67,7 +64,6 @@ import {
 } from '@angular/material/dialog';
 import {OrdersObservationComponent} from './public/components/orders-observation/orders-observation.component';
 import {OrdersComponent} from './public/pages/orders/orders.component';
-import {OrderTableComponent} from "./orders/components/table/table.component";
 import {MatTable, MatTableModule} from "@angular/material/table";
 import {CdkCellDef, CdkFooterRowDef, CdkHeaderCellDef, CdkHeaderRowDef, CdkTable} from "@angular/cdk/table";
 import {provideAnimationsAsync} from "@angular/platform-browser/animations/async";
@@ -85,7 +81,6 @@ import {provideAnimationsAsync} from "@angular/platform-browser/animations/async
     ReportsPanelComponent,
     NotificationsPanelComponent,
     NotificationsCardComponent,
-    ReportCardComponent,
     ProductsCardComponent,
     SignInComponent,
     SignUpComponent,
@@ -99,18 +94,16 @@ import {provideAnimationsAsync} from "@angular/platform-browser/animations/async
     FavoritesCardComponent,
     FavoritesPanelComponent,
     HomeClientComponent,
-    HomeStaffComponent,
     UpdateComponent,
     UploadComponent,
     RemoveComponent,
     NotifyCustomerComponent,
     NotifySuppliersComponent,
     ManageReturnsComponent,
-    CardComponent,
-    FormComponent,
+
     OrdersObservationComponent,
     OrdersComponent,
-    OrderTableComponent,
+
   ],
   imports: [
     BrowserModule,
