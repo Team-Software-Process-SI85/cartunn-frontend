@@ -7,7 +7,7 @@
       <div class="column-card-desc">
         <h2 class="product-title">{{ product.title }}</h2>
         <p class="product-model">{{ product.model }}</p>
-        <p class="product-price">${{ product.price | number: '1.2-2' }}</p>
+        <p class="product-price">${{ product.price | number: '1.2-2' }}</p> <!-- Displaying price as a single <p> -->
       </div>
     </mat-card-content>
     <mat-card-actions class="actions-section">
@@ -17,6 +17,6 @@
     </mat-card-actions>
   </mat-card>
   <div class="total-section">
-    <h3>Total: <span class="total-amount">$1200</span></h3>
+    <h3>Total: <span class="total-amount">${{ total | number: '1.2-2' }}</span></h3> <!-- Adjusting total to use a variable -->
   </div>
 </div>
