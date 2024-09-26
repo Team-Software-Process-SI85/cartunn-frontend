@@ -1,16 +1,22 @@
-<mat-card *ngFor="let product of products" class="product-card row">
-  <mat-card-content class="column-card-content">
-    <div class="column-card-img">
-      <img mat-card-image [src]="product.image" [alt]="product.title" class="img-card"/>
-    </div>
-    <div class="column-card-desc">
-      <p> {{ product.title }}</p>
-      <p> {{ product.model }}</p>
-      <p> {{ product.price }}</p>
-    </div>
-  </mat-card-content>
-  <mat-card-actions class="actions-section column-card-action">
-    <button mat-icon-button-color="white" aria-label="Delete"><mat-icon>delete_outline</mat-icon></button>
-  </mat-card-actions>
-</mat-card>
-<p> Total $1200</p>
+<div class="shopping-cart">
+  <mat-card *ngFor="let product of products" class="product-card">
+    <mat-card-content class="column-card-content">
+      <div class="column-card-img">
+        <img mat-card-image [src]="product.image" [alt]="product.title" class="img-card" />
+      </div>
+      <div class="column-card-desc">
+        <h2 class="product-title">{{ product.title }}</h2>
+        <p class="product-model">{{ product.model }}</p>
+        <p class="product-price">${{ product.price | number: '1.2-2' }}</p>
+      </div>
+    </mat-card-content>
+    <mat-card-actions class="actions-section">
+      <button mat-icon-button aria-label="Remove {{ product.title }}" color="warn">
+        <mat-icon>delete_outline</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+  <div class="total-section">
+    <h3>Total: <span class="total-amount">$1200</span></h3>
+  </div>
+</div>
